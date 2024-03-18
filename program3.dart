@@ -54,7 +54,10 @@ void main() {
   //read the input convert into and interger and store it variable admn_no
   int admn_no = int.parse(stdin.readLineSync()!);
   //object to access the properties of the class student
-  var student = Student(name: name, admn_no: admn_no);
+  var student = Student(
+    name: name,
+    admn_no: admn_no,
+  );
   //boolean variables to check whether they contain values that we are going to use to store data
   bool cat1Entered = false;
   bool cat2Entered = false;
@@ -67,7 +70,7 @@ void main() {
                  3.Check Main exam Results
                  4.Check Average 
                  5.Exit""");
-                  //getting users input
+    //getting users input
     stdout.write("Enter choice : ");
     //converting the input from the user to an interger and storing it to a variable choice
     int choice = int.parse(stdin.readLineSync()!);
